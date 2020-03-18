@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Platzi Pizzeria</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Pizzaria Platzi. Sabores incomparaveis, Ingredientes de alta qualidade e Compromisso de entrega.">
+    <link href="stylepedido.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header-menor">
+        <section id="header-esquerda">
+            <img src="imagens/logo_preta.svg" />
+        </section>
+
+        <nav id="header-direita">
+            <a href="index.html">Home</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedido.html" class="botao-escuro">Peça online</a>
+        </nav>
+    </header>
+
+    <!-- Formulario -->
+    <form method="POST" id="formPedido" action="mailto:">
+        <fieldset id="menu-sabor-tamanho">
+            
+                <div class="menu-sabor">
+                    <label class="menu-escolhaS" for="sabor">Escolha o sabor da sua pizza</label>
+                    <select id="sabor" name="sabor">
+                        <option value="1">PEPERONI</option>
+                        <option value="2">SALAME</option>
+                        <option value="3">HAVAIANA</option>
+                        <option value="4">NORDESTINA</option>
+                        <option value="5" selected>QUATRO QUEIJOS</option>
+                        <option value="6">MARGUERITA</option>
+                    </select>
+                </div>
+                
+                <div class="menu-tamanho">
+                    <label class="menu-escolhaT" for="tamanho">Escolha o tamanho da sua pizza</label>
+                    <select id="tamanho" name="tamanho">
+                        <option value="1">PEQUENA</option>
+                        <option value="2">MÉDIA</option>
+                        <option value="3">GRANDE</option>
+                    </select>
+                </div>
+           
+        </fieldset>
+
+        <fieldset id="endereco">
+            <div class="input-group">
+                <p><input type="text" name="textoEndereco" id="campoEndereco" placeholder="Insira seu endereço completo"></input>
+                <span class="input-group-addon"><img id="imagem-pin" src="imagens/pin.svg" /> </span></p>
+            </div>                        
+        </fieldset>
+        
+        <fieldset id="unicamente">
+            <p class="help-block">Unicamente para Brasil</p>
+        </fieldset>
+
+        <fieldset id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.9879550888608!2d-74.05753597306352!3d4.656122329967218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a4333a1a275%3A0x91a59c01b85e3f59!2sPlatzi!5e0!3m2!1spt-BR!2sbr!4v1579132262466!5m2!1spt-BR!2sbr"
+                width="100%" height="883" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </fieldset>
+
+        <fieldset id="confirmar">
+           <p><button class="botao-confirmar" type="submit" name="submit">CONFIRMAR</button></p>
+        </fieldset>
+    </form>
+    <!-- Fim do formulario -->
+
+
+    <!-- logo preta -->
+    <section id="logo-preta">
+        <img class="logomarca-preta" src="imagens/logo_preta.svg" />
+    </section>
+
+    <!-- rodapé do  site -->
+    <footer>
+
+        <section id="footer-esquerda">
+            <a href=" ">Status</a>
+            <a href="politicas.html">Política de privacidade</a>
+            <a href="contato.html">Contate-nos</a>
+        </section>
+
+        <section id="footer-direita">
+            <img src="imagens/bandeira-brasil.svg" />
+            <a href="http://instagram.com" target="_blank"> <img class="icones-social" src="imagens/Instagram_1.svg" />
+            </a>
+            <a href="http://facebook.com" target="_blank"> <img class="icones-social" src="imagens/Facebook_1.svg" />
+            </a>
+            <a href="http://twitter.com" target="_blank"> <img class="icones-social" src="imagens/Twitter_1.svg" /> </a>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,537 @@
+/*  black    #191716 
+    white    #e0e2db 
+    yellow   #e6af2e 
+    grey     #beb7a4 
+*/
+
+/* General rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Navbar */
+  nav ul {
+    list-style-type: none;
+    border-top: 6px solid #e6af2e;
+    background-color: #191716;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    padding: 15px 25px;
+    color: #e6af2e;
+  }
+  
+  nav ul li a:hover {
+    color: #e0e2db;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 40px;
+    background-color: #e6af2e;
+    color: #191716;
+    font-style: italic;
+  }
+  
+  .logo:hover {
+    background-color: #e0e2db;
+    color: #e6af2e;
+  }
+  
+  /* Banner section */
+  #banner {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://s20.postimg.cc/l3kdrpe4d/work.jpg") fixed no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-text {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #e0e2db;
+    font-style: italic;
+  }
+  
+  .banner-underline {
+    width: 200px;
+    border: 3px solid #191716;
+    margin: 10px auto 20px auto;
+  }
+  
+  .banner-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .banner-btn button {
+    font-size: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+    background: transparent;
+    margin: 0 10px;
+    color: #e6af2e;
+    border: 2px solid #e6af2e;
+    border-radius: 20px;
+  }
+  
+  .banner-btn button:hover {
+    color: #e0e2db;
+    background: #e6af2e;
+  }
+  
+  /* Skills section */
+  #skills {
+    padding: 60px 0;
+    background-color: #beb7a4;
+  }
+  
+  .skills-container {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+  
+  .skills-item {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .skills-item h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 15px 0;
+    color: #e6af2e;
+    text-transform: uppercase;
+  }
+  
+  .skills-item p {
+    width: 75%;
+    margin: 0 auto;
+    color: #e0e2db;
+  }
+  
+  /* title */
+  .title {
+    margin: 40px 0;
+  }
+  
+  .title-text {
+    text-align: center;
+    font-size: 40px;
+    color: #e0e2db;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  
+  .title-underline {
+    width: 200px;
+    border: 3px solid #e6af2e;
+    margin: 0 auto;
+  }
+  
+  /* services */
+  #services {
+    min-height: 100vh;
+    background: url("https://s20.postimg.cc/h771voy9p/building-top.jpg") fixed no-repeat center;
+    background-size: cover;
+    padding: 20px 0 80px 0;
+  }
+  
+  .services-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    color: #e0e2db;
+  }
+  
+  .service-item {
+    overflow: hidden;
+    position: relative;
+    padding: 60px;
+  }
+  
+  .service-item .fa {
+    color: #e6af2e;
+    margin-bottom: 30px;
+  }
+  
+  .service-item-black {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  }
+  
+  .service-item-white {
+    background: linear-gradient(
+      rgba(206, 208, 206, 0.6),
+      rgba(206, 208, 206, 0.6)
+    );
+    color: #191716;
+  }
+  
+  .front-text {
+    text-align: center;
+    transition: transform 2s;
+  }
+  
+  .back-text {
+    position: absolute;
+    bottom: -15em;
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    transition: bottom 2s;
+    padding: 30px 0;
+  }
+  
+  .back-text h1 {
+    margin-bottom: 20px;
+  }
+  
+  .back-text button {
+    margin-top: 20px;
+    padding: 5px 20px;
+    background: transparent;
+    border: 2px solid #e6af2e;
+    font-size: 20px;
+    color: #e6af2e;
+  }
+  
+  .back-text button:hover {
+    background-color: #e6af2e;
+    color: #191716;
+  }
+  
+  .service-item-white button {
+    background-color: #e6af2e;
+    color: #191716;
+  }
+  
+  .service-item-white button:hover {
+    background-color: #191716;
+    border-color: #191716;
+    color: #e6af2e;
+  }
+  
+  .service-item:hover .front-text {
+    transform: translateY(-200px);
+  }
+  
+  .service-item:hover .back-text {
+    bottom: 0;
+  }
+  
+  /* Project section */
+  #projects .title-text{
+    color: #191716;
+  }
+  
+  #projects{
+    padding: 20px 0 80px 0;
+    background-color: #e0e2db;
+  }
+  
+  .projects-container{
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .projects-item{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    color: #e0e2db;
+    overflow: hidden;
+    margin: 20px 0; 
+    box-shadow: 5px 5px 10px 5px grey;
+  }
+  
+  #projects img{
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 4s;
+  }
+  
+  .img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+  }
+  
+  .img-text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .img-text h6{
+    font-size: 15px;
+  }
+  
+  .img-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0;
+    color: #e6af2e;
+    transition: opacity 4s;
+  }
+  
+  .projects-item:hover img{
+    opacity: 0.4;
+    transform: scale(1.3);
+  }
+  
+  .projects-item:hover .img-text,
+  .projects-item:hover .img-footer{
+    opacity: 1;
+  }
+  
+  /* filler contact section */
+  #filler-contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://s20.postimg.cc/qrqoikvbh/building-night.jpg") fixed no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px
+  }
+  
+  #filler-contact h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #e0e2db;
+    margin-bottom: 10px;
+  }
+  
+  #filler-contact button{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #e6af2e;
+    border: 2px solid #e6af2e;
+    padding: 10px 15px;
+    background: transparent;
+  }
+  
+  #filler-contact button:hover{
+    background-color: #e6af2e;
+    color: #191716;
+  }
+  
+  /* post section */
+  #posts{
+    background: #beb7a4;
+    padding: 20px 0 80px 0;
+  }
+  
+  .post-container{
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .post-item{
+    background-color: white;
+    color: #191716; 
+    margin: 20px 0;
+    box-shadow: 5px 5px 10px 5px grey;
+  }
+  
+  #posts img{
+    width: 100%;
+    display: block;
+  }
+  
+  .img-container{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+  }
+  
+  .img-container .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #e6af2e;
+    opacity: 0;
+    transition: opacity 4s;
+  }
+  
+  .img-container:hover img{
+    opacity: 0.4;
+  }
+  
+  .img-container:hover .fa{
+    opacity: 1;
+  }
+  
+  .text-container{
+    padding: 10px 5px 30px 5px;
+  }
+  
+  .text-container p{
+    margin: 15px 0 25px 0;
+  }
+  
+  .text-container a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #e6af2e;
+    color: #e6af2e;
+    margin-bottom: 20px;
+  }
+  
+  .text-container a:hover{
+    background-color: #191716;
+    border-color: #191716;
+  }
+  
+  /* Footer section */
+  footer{
+    background-color: #191716;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: baseline;
+  }
+  
+  .footer-text{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #e0e2db;
+    margin-bottom: 10px;
+  }
+  
+  .footer-text a{
+    color: #e6af2e;
+  }
+  
+  .footer-text a:hover{
+    color: #e0e2db;
+  }
+  
+  .footer-icons .fa{
+    margin-right: 10px;
+    color: #e0e2db;
+    transition: transform 2s;
+  }
+  
+  .footer-icons .fa:hover{
+    color: #e6af2e;
+    transform: translateY(-15px);
+  }
+  
+  /* Media Queries: Responsiveness */
+  @media screen and (min-width: 576px) {
+    /* Navbar */
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  
+    nav ul li {
+      flex: 1 0 auto;
+    }
+  
+    .logo {
+      display: block;
+      text-align: center;
+    }
+  
+    .logo .fa {
+      display: none;
+    }
+  
+    /* Skills section */
+    .skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1em;
+    }
+  
+    /* Project section */
+    .projects-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 1em;
+    }
+  
+    /* Posts section */
+    .post-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2em;
+      grid-row-gap: 1em;
+    }
+  }
+  
+  @media screen and (min-width: 776px) {
+    /* services */
+    .services-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .services-container .service-item:nth-of-type(1) {
+      order: 1;
+    }
+    .services-container .service-item:nth-of-type(2) {
+      order: 2;
+    }
+    .services-container .service-item:nth-of-type(3) {
+      order: 4;
+    }
+    .services-container .service-item:nth-of-type(4) {
+      order: 3;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    /* Skills section */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 5px;
+    }
+  
+     /* Project section */
+     .projects-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 1em;
+    }
+  
+    /* post section */
+    .post-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 1em;
+      grid-column-gap: 1em;
+    }
+  }
+  

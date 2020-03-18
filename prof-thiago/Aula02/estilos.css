@@ -1,0 +1,147 @@
+/*Todas as tags*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font: 14px sans-serif;
+}
+
+/*Topo*/
+header{
+    width: 1010px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+header > img{
+    float: left;
+    margin: 10px;
+}
+
+header > nav{
+    float: right;
+}
+
+header > nav > a{
+    display: inline-block;
+    padding: 25px 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+/*Banner*/
+.banner{
+    width: 100%;
+}
+
+.banner > img{
+    width: 100%;
+}
+
+/*Principal*/
+main{
+    width: 1010px;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+/*Segmentos*/
+.segmentos > figure{
+    display: inline-block;
+    width: 330px;
+    text-align: center;
+}
+
+.segmentos > figure > figcaption{
+    color: #428bca;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.segmentos > figure > p{
+    color: #999;
+}
+
+/*Noticia*/
+.noticia{
+    margin-top: 50px;
+    overflow: auto;
+}
+
+.noticia > h1{
+    font-size: 32px;
+}
+
+.noticia > img{
+    float: left;
+    margin-top: 10px;
+}
+
+.noticia > p{
+    float: right;
+    width: 500px;
+    line-height: 25px;
+    color: #999;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+/*Contato*/
+.mapa{
+    float: left;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 480px;
+    height: 350px;
+}
+
+.contato{
+    float: right;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 480px;
+    height: 350px;
+}
+
+.contato > input[type="text"]{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 460px;
+    margin: 5px;
+}
+
+.contato > select{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 472px;
+    margin: 5px;
+}
+
+.contato > textarea{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 460px;
+    height: 130px;
+    margin: 5px;
+    resize: none;
+}
+
+.contato > input[type="submit"]{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*Rodapé*/
+footer{
+    text-align: center;
+    font-size: 10px;
+    color: #999;
+    margin: 20px;
+}

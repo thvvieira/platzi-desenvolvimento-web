@@ -1,0 +1,608 @@
+@media only screen and (max-width: 600px) {}
+
+@font-face {
+    font-family: "Aileron Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-regular.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-italic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Thin";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-Thin.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron UltraLight";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-UltraLight.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron ThinItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-thinitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron UltraLightItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-ultralightitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-light.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron LightItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-lightitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-SemiBold.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron SemiBoldItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/Aileron-SemiBoldItalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-bold.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron BoldItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-bolditalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Black";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-black.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron Heavy";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-heavy.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron BlackItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-blackitalic.otf') format('woff');
+}
+
+@font-face {
+    font-family: "Aileron HeavyItalic";
+    font-style: normal;
+    font-weight: normal;
+    src: local(Aileron), url('fontes/aileron-heavyitalic.otf') format('woff');
+}
+
+* {
+    font-family: Aileron Regular;
+}
+
+body{
+    margin: 0;
+    padding: 0px;
+}
+
+#home {
+    background-image: url("imagens/fundo.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100%;
+}
+
+.botao {
+    background: #98ca3f;
+    border-radius: 5px;
+    width: 210px;
+    height: 57px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal normal 20px/57px "Aileron Bold", sans-serif;
+    text-align: center;
+}
+
+.botao-escuro {
+    background: #182C3F;
+    border-radius: 5px;
+    width: 210px;
+    height: 57px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal normal 20px/57px "Aileron Bold", sans-serif;
+    text-align: center;
+}
+
+.botao-logo {
+    background: #98ca3f;
+    border-radius: 5px;
+    width: 255px;
+    height: 55px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal normal 18px/55px "Aileron Bold", sans-serif;
+    text-align:center;
+}
+
+header>nav {
+    float: right;
+    /*width: 457px;
+    height: 57px;
+    margin-right: 100px;*/
+    font-family: "Airelon Regular";
+    font-size: 21px;
+}
+
+header>nav>a {
+    text-decoration: none;
+    color: white;
+    padding: 1px 5px;
+    margin-right: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header>nav>a:hover:after {
+    width: 49.3px;
+    height: 0;
+    border: solid 3px #ffffff;
+}
+
+header {
+    margin-top: 25px;
+    height: 80px;
+}
+
+section {
+    text-align: center;
+}
+
+.logomarca {
+    width: 30%;
+   /* width: 368px;
+    height: 231px;
+    margin-bottom: 10px;*/
+}
+
+section>figure {
+    float: left;
+}
+
+#diferenciais>figure {
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.14);
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.retangulo-depoimento {
+    width: 100%;
+    height: 900px; /*1070px tamanho do design*/
+    background-color: #98ca3f;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.retangulo-mais-sabores{
+    width: 100%;
+    height: 84px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #98ca3f;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mais-sabores{
+    font-family: "Aileron Bold";
+    font-size: 26px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2C2E30;
+}
+
+.mais-sabores:hover{
+    border-bottom: 3px solid #ffffff;
+}
+
+
+.foto-depoimento {
+    width: 456.49px;
+    height: 540.42px;
+    border-radius: 3px;
+    /*float: right;*/
+}
+
+/*Retangulo do design*/
+.barra-depoimento{
+    float: left;
+}
+
+.texto-depoimento {
+    width: 421px;
+    height: 340px;
+    font-family: "Aileron LightItalic";
+    font-size: 28px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #182c3f;
+}
+
+/*Botões do slideshow*/
+.slider-seletor-ativo {
+    width: 78.8px;
+    height: 9.2px;
+    border-radius: 5.5px;
+    background-color: #182c3f;
+}
+
+.slider-seletor-inativo {
+    width: 78.8px;
+    height: 9.2px;
+    border-radius: 5.5px;
+    background-color: #ffffff;
+}
+/*fim dos botoes slideshow*/
+
+footer {
+    font-family: "Aileron Bold";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #54565A;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;    
+    background-color: #EFF2F3;
+}
+
+footer>section>a{
+    color: #54565A;
+}
+
+.nosso-compromisso {
+    height: 36px;/*Utilizei o auto*/
+    font-family: "Aileron Bold";
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    /*margin-bottom: 90px;*/
+}
+
+.nome-pessoa {
+    width: 147px;
+    height: 28px;
+    font-family: "Aileron Bold";
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.profissao {
+    height: 20px;
+    font-family: "Aileron Regular";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #182c3f;
+}
+
+.texto-abaixo-logo {
+    width: 665px;
+    height: 109px;
+    font-family: "Aileron SemiBold";
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.89;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d2d2d2;
+    margin: auto;
+}
+
+.diferenciais-titulo strong {
+    width: 158px;
+    height: 63px;
+    font-family: "Aileron Bold";
+    font-size: 18px;/*Tamanho do design*/
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: center;
+    color: #98ca3f;
+}
+
+.diferenciais-titulo {
+    color: #2c2e30;
+    font-size: 18px;/*Tamanho do design*/
+}
+
+.saiba-mais:hover:after {
+    width: 133.9px;
+    height: 0;
+    border: solid 3px #98ca3f;
+}
+
+section#logo {    
+    height: 600px; /*utilizei 670px*/
+    line-height: 5;
+    /*margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: auto;*/    
+}
+
+section#diferenciais {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#logo-preta{
+    margin-top: 50px;    
+    margin-right: center;
+    margin-bottom: 65px;
+    margin-left: center;
+}
+
+.logomarca-preta{
+    width: 329.7px;
+    height: 206.9px;
+}
+
+#depoimento-texto {
+    text-align: left;
+}
+
+#fino {
+    background: none;
+}
+
+#header-menor {
+    margin-top: 0px;
+    background-color: #98ca3f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-menor>section>img {
+    width: 20%;
+}
+
+section#footer-direita {
+    float: right;
+    margin: 60px 50px 40px auto;
+    /*margin-left: 200px;
+    margin-top: 15px;
+    height: 37px;*/
+}
+
+section#footer-direita>a {
+    padding: 1px 5px;
+    margin-right: 2px;
+}
+
+.icones-social{
+    width:24px;
+    height:24px;
+}
+
+section#footer-esquerda {
+    float: left;    
+    margin: 60px auto 40px 50px;
+    /*margin-right: 200px;
+    margin-top: 15px;
+    height: 37px;*/
+}
+
+section#footer-esquerda>a {
+    padding: 1px 5px;
+    margin-right: 15px;   
+}
+
+.imagem-pizza {
+    width: 80%;
+    border-radius: 2px;
+    /*margin-top: 10%;
+    margin-bottom: 10%;*/
+}
+
+#receitas {
+    display: grid;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+.titulo-receitas {
+    font-family: "Aileron Bold";
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2C2E30;
+}
+
+.paragrafo-receitas {
+    font-family: "Aileron Regular";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2C2E30;
+}
+
+.link-receitas {
+    font-family: "Aileron Bold";
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2C2E30;
+    padding-bottom: 2px;
+}
+
+#receitas>figure {
+    height: 200px;
+}
+
+.receita-1-1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.receita-1-2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.receita-2-1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.receita-2-2 {
+    grid-row: 2;
+    grid-column: 2;   
+}
+
+.receita-3-1 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.receita-3-2 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#header-direita {
+    margin: auto;
+}
+
+#header-direita>a:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+#header-esquerda {
+    margin: auto;
+}
+
+a:hover {
+    border-bottom: 2px solid #98ca3f;
+}
+
+.autor{
+    font-family: "Aileron Regular";
+    font-size: 11px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    text-align: center;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #54565A;
+    background-color: rgb(215, 216, 216);
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#coracao{
+    width: 20px;
+    height: 20px;
+    padding-left: 3px;
+}

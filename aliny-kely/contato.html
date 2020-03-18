@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Platzi Pizzeria</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Pizzaria Platzi. Sabores incomparaveis, Ingredientes de alta qualidade e Compromisso de entrega.">
+    <link href="styleoutras.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header-menor">
+        <section id="header-esquerda">
+            <img src="imagens/logo_preta.svg" />
+        </section>
+
+        <nav id="header-direita">
+            <a href="index.html">Home</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedido.html" class="botao-escuro">Peça online</a>
+        </nav>
+    </header>
+
+    <!-- Formulario de contato -->
+
+    <form class="formulario" method="post">
+        <h1> ENVIE SEU COMENTÁRIO, DÚVIDA OU RECLAMAÇÃO</h1>
+        <h2>Nós valorizamos sua opinião e queremos ouvir sua experiência em nossas pizzarias. </h2>
+        <p>Por favor, preencha o formulário abaixo. *Campos Obrigatórios</p>
+
+        <div class="field">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+
+        <div class="field">
+            <label for="telefone">Seu Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+        </div>
+
+        <div class="field">
+            <label for="email">Seu E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>
+        <div class="field radiobox">
+            <span>Deseja receber nossas novidades?</span>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+        </div>
+        <div class="field">
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+        </div>
+
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+
+    <!-- logo preta -->
+    <section id="logo-preta">
+        <img class="logomarca-preta" src="imagens/logo_preta.svg" />
+    </section>
+
+    <!-- rodapé do  site -->
+    <footer>
+
+        <section id="footer-esquerda">
+            <a href=" ">Status</a>
+            <a href="politicas.html">Política de privacidade</a>
+            <a href="contato.html">Contate-nos</a>
+        </section>
+
+        <section id="footer-direita">
+            <img src="imagens/bandeira-brasil.svg" />
+            <a href="http://instagram.com" target="_blank"> <img class="icones-social" src="imagens/Instagram_1.svg" />
+            </a>
+            <a href="http://facebook.com" target="_blank"> <img class="icones-social" src="imagens/Facebook_1.svg" />
+            </a>
+            <a href="http://twitter.com" target="_blank"> <img class="icones-social" src="imagens/Twitter_1.svg" /> </a>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
